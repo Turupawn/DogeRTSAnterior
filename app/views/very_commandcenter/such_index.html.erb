@@ -1,0 +1,215 @@
+very command center
+
+
+<% if current_user != nil %>
+
+<table>
+  <tr>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 0)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 0 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 0 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 0 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 1)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 1 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 1 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 1 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 2)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 2 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 2 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 2 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 3)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 3 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 3 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barrack</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 3 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 4)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 4 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 4 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 4 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 5)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 5 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 5 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 5 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 6)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 6 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 6 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 6 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 7)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 7 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 7 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 7 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+    <td>
+      <% if VeryBuilding.all.where(:user_id => current_user.id, :position => 8)[0] == nil %>
+        <img src="/images/very_empty.png"/>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 8 %>
+          <%= hidden_field_tag 'type', "such_generator" %>
+          <button>create such generator</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 8 %>
+          <%= hidden_field_tag 'type', "shibe_barracks" %>
+          <button>create shibe barracks</button> </br>
+        </form>
+        <form action="/wow_building_created">
+          <%= hidden_field_tag 'position', 8 %>
+          <%= hidden_field_tag 'type', "much_defense" %>
+          <button>create much defense</button> </br>
+        </form>
+      <% elsif %>
+        <p>created</p>
+      <% end %>
+    </td>
+  </tr>
+</table>
+
+<% else %>
+  pls login
+<% end %>

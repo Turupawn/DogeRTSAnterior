@@ -1,0 +1,35 @@
+<h1>Listing shibe_attacks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User attacker</th>
+      <th>User attacked</th>
+      <th>Units used</th>
+      <th>Units destroyed</th>
+      <th>Damage dealt</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shibe_attacks.each do |shibe_attack| %>
+      <tr>
+        <td><%= shibe_attack.user_attacker_id %></td>
+        <td><%= shibe_attack.user_attacked_id %></td>
+        <td><%= shibe_attack.units_used %></td>
+        <td><%= shibe_attack.units_destroyed %></td>
+        <td><%= shibe_attack.damage_dealt %></td>
+        <td><%= link_to 'Show', shibe_attack %></td>
+        <td><%= link_to 'Edit', edit_shibe_attack_path(shibe_attack) %></td>
+        <td><%= link_to 'Destroy', shibe_attack, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shibe attack', new_shibe_attack_path %>

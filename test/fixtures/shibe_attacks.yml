@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_attacker_id: 1
+  user_attacked_id: 1
+  units_used: 1
+  units_destroyed: 1
+  damage_dealt: 1
+
+two:
+  user_attacker_id: 1
+  user_attacked_id: 1
+  units_used: 1
+  units_destroyed: 1
+  damage_dealt: 1

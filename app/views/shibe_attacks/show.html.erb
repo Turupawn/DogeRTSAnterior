@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User attacker:</strong>
+  <%= @shibe_attack.user_attacker_id %>
+</p>
+
+<p>
+  <strong>User attacked:</strong>
+  <%= @shibe_attack.user_attacked_id %>
+</p>
+
+<p>
+  <strong>Units used:</strong>
+  <%= @shibe_attack.units_used %>
+</p>
+
+<p>
+  <strong>Units destroyed:</strong>
+  <%= @shibe_attack.units_destroyed %>
+</p>
+
+<p>
+  <strong>Damage dealt:</strong>
+  <%= @shibe_attack.damage_dealt %>
+</p>
+
+<%= link_to 'Edit', edit_shibe_attack_path(@shibe_attack) %> |
+<%= link_to 'Back', shibe_attacks_path %>

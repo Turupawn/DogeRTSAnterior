@@ -1,0 +1,29 @@
+<h1>Listing wow_upgrades</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Building</th>
+      <th>Type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wow_upgrades.each do |wow_upgrade| %>
+      <tr>
+        <td><%= wow_upgrade.building_id %></td>
+        <td><%= wow_upgrade.type %></td>
+        <td><%= link_to 'Show', wow_upgrade %></td>
+        <td><%= link_to 'Edit', edit_wow_upgrade_path(wow_upgrade) %></td>
+        <td><%= link_to 'Destroy', wow_upgrade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wow upgrade', new_wow_upgrade_path %>

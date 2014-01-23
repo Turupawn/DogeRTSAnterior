@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Building:</strong>
+  <%= @much_withdraw.building_id %>
+</p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @much_withdraw.timestamp %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @much_withdraw.amount %>
+</p>
+
+<%= link_to 'Edit', edit_much_withdraw_path(@much_withdraw) %> |
+<%= link_to 'Back', much_withdraws_path %>

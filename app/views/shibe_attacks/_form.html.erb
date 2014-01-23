@@ -1,0 +1,37 @@
+<%= form_for(@shibe_attack) do |f| %>
+  <% if @shibe_attack.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shibe_attack.errors.count, "error") %> prohibited this shibe_attack from being saved:</h2>
+
+      <ul>
+      <% @shibe_attack.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_attacker_id %><br>
+    <%= f.number_field :user_attacker_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_attacked_id %><br>
+    <%= f.number_field :user_attacked_id %>
+  </div>
+  <div class="field">
+    <%= f.label :units_used %><br>
+    <%= f.number_field :units_used %>
+  </div>
+  <div class="field">
+    <%= f.label :units_destroyed %><br>
+    <%= f.number_field :units_destroyed %>
+  </div>
+  <div class="field">
+    <%= f.label :damage_dealt %><br>
+    <%= f.number_field :damage_dealt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

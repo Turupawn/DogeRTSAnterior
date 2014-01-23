@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Building:</strong>
+  <%= @wow_upgrade.building_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @wow_upgrade.type %>
+</p>
+
+<%= link_to 'Edit', edit_wow_upgrade_path(@wow_upgrade) %> |
+<%= link_to 'Back', wow_upgrades_path %>
